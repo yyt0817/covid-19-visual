@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@100;300&family=Ubuntu:ital,wght@1,500&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+	height: 100vh;
+	font-family: 'Raleway', sans-serif;
+	background-color: black;
+	align-items: center; /*verically*/
+	justify-content: center; /*horizontally*/
+}
+body h2{
+	font-size: 3rem;
+}
+
+.container{
+	z-index: 1;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	border-radius: 24px;
+	background: #fff;
+	padding: 2%;
+	box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.75);
+}
+.board{
+	column-count: 3;
+	column-gap: 1rem;
+}
+
+.container h2{
+	margin: 0 0 30px;
+	text-align: center;
+}
+
+.card{
+	width: 84%;
+	background: #ccc;
+	padding: 8%;
+	margin-bottom: 20px;
+	border-radius: 6px;
+	color: #fff;
+}
+.card:hover i{
+	font-size: 3.5rem;
+	transition: all 1s ease;
+}
+.card.a{
+	background: #41a7ff;
+}
+.card.cr{
+	background: #ff3434;
+}
+.card.r{
+	background: #32b336;
+}
+.card.ca{
+	background: #d83f3f;
+}
+.card.d{
+	background: #ff0053;
+}
+.card.t{
+	background: #ffa501;
+}
+.card span{
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: 4px;
+}
+.card i{
+	font-size: 3rem;
+}
+@media screen and (max-width: 768px){
+	.board{
+		column-count: 2;
+	}
+}
+@media screen and (max-width: 500px){
+	.board{
+		column-count: 1;
+	}
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Roboto';
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.web-coder-skull {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.web-coder-skull:nth-child(6){
+    stroke: #263238;
+	animation-delay: -1;
+}
+
+.web-coder-skull:nth-child(2){
+	stroke: #26abe2;
+	animation-delay: -2s;
+}
+
+.web-coder-skull:nth-child(3){
+	stroke: orange;
+	animation-delay: -3s;
+}
+
+.web-coder-skull:nth-child(4){
+	stroke: red;
+	animation-delay: -4s;
+}
+
+.web-coder-skull:nth-child(5){
+	stroke: #fff;
+	animation-delay: -5s;
+}
+.web-coder-skull:nth-child(1){ 
+stroke: green;
+animation-delay: -1s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
